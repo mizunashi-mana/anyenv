@@ -75,7 +75,7 @@ if [ -z "$print" ]; then
     echo
     case "$shell" in
     fish )
-      echo 'status --is-interactive; and source (anyenv init -|psub)'
+      echo 'status --is-interactive; and source (anyenv init --shell fish -)'
       ;;
     * )
       echo 'eval "$(anyenv init -)"'
